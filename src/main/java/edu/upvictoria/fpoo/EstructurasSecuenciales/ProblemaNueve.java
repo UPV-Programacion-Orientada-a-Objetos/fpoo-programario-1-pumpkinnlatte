@@ -19,10 +19,10 @@ public class ProblemaNueve {
         double horas, pxh;
 
         System.out.print("Ingrese el pago por hora del empleado: ");
-        pxh = Double.parseDouble(leer.readLine());
+        pxh = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese la cantidad de horas trabajadas: ");
-        horas = Double.parseDouble(leer.readLine());
+        horas = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("El salario a pagar es de: $ " + obtenerSueldo(pxh, horas));
     }

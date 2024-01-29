@@ -20,10 +20,10 @@ public class ProblemaCinco {
         double a,b;
 
         System.out.print("Ingrese el tamaño del lado A (unidades):");
-        a = Double.parseDouble(leer.readLine());
+        a = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese el tamaño del lado B (unidades):");
-        b = Double.parseDouble(leer.readLine());
+        b = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("El area del terreno es de: " + areaTerrerno(a,b) + " unidades^2");
     }

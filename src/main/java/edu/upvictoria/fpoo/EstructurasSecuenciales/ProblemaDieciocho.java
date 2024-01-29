@@ -3,12 +3,12 @@ package edu.upvictoria.fpoo.EstructurasSecuenciales;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class ProgramaDieciocho {
+public class ProblemaDieciocho {
 
     public double precioKilometro(double precio, double km) {
         return Math.abs(precio) * Math.abs(km);
     }
-    public ProgramaDieciocho() throws IOException {
+    public ProblemaDieciocho() throws IOException {
 
         System.out.println("Problema 18");
         System.out.println("Viaje La Curva Loca");

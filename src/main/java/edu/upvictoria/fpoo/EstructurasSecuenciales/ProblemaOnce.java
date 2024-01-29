@@ -18,16 +18,16 @@ public class ProblemaOnce {
         double l, a, h, costo;
 
         System.out.print("Ingrese el costo por metro cúbico: ");
-        costo = Double.parseDouble(leer.readLine());
+        costo = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese en metros el largo de la alberca: ");
-        l = Double.parseDouble(leer.readLine());
+        l = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese en metros el ancho de la alberca: ");
-        a = Double.parseDouble(leer.readLine());
+        a = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese en metros la altura de la alberca: ");
-        h = Double.parseDouble(leer.readLine());
+        h = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("La alberca consumió: $ " + pagoAgua(l, a, h, costo) + "en agua");
 

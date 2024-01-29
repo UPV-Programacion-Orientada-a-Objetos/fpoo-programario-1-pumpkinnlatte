@@ -18,10 +18,10 @@ public class ProblemaTres {
         double b, h;
 
         System.out.print("Ingrese la base del rectangulo (unidades):");
-        b = Double.parseDouble(leer.readLine());
+        b = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese la altura del rectangulo (unidades):");
-        h = Double.parseDouble(leer.readLine());
+        h = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("El area del rectangulo es de: " + areaRectangulo(b,h));
     }

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 public class ProblemaDiez {
 
     public double metrosAPulgadas(double metros){
-        return metros / 0.0254;
+        return Math.abs(metros) / 0.0254;
     }
 
     public ProblemaDiez() throws IOException {

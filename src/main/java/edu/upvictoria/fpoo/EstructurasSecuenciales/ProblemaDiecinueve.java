@@ -4,12 +4,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class ProgramaVeinte {
+public class ProblemaDiecinueve {
 
-    public ProgramaVeinte() throws IOException {
+    public double tiempoRecorrer( double km, double velocidad){
+        return Math.abs(km) / Math.abs(velocidad);
+    }
 
-        System.out.println("Problema 20");
-        System.out.println("Llamada Telefonica");
+    public ProblemaDiecinueve() throws IOException {
+
+        System.out.println("Problema 19");
+        System.out.println("Ciclista");
 
         BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 

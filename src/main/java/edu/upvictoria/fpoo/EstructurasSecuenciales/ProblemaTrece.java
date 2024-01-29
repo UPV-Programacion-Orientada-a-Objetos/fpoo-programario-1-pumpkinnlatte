@@ -18,7 +18,7 @@ public class ProblemaTrece {
         double pesos;
 
         System.out.print("Ingrese la cantidad de pesos mexicanos:");
-        pesos = Double.parseDouble(leer.readLine());
+        pesos = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("\n1 Dolar = : 17.6 MXN\n");
 

@@ -20,7 +20,7 @@ public class ProblemaCuatro {
 
         System.out.print("Ingrese el radio del circulo (unidades): ");
 
-        radio = Double.parseDouble(leer.readLine());
+        radio = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("El area de la circunferencia es de: " + areaCircunferencia(radio) + " (unidades^2)");
 

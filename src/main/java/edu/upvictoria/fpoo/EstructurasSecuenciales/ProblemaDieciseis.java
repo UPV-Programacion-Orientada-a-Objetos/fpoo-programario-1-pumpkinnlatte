@@ -17,10 +17,10 @@ public class ProblemaDieciseis
         double precio, cantidad;
 
         System.out.print("Ingrese el precio que se cobra por m2: ");
-        precio = Double.parseDouble(leer.readLine());
+        precio = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese la cantidad de m2 utilizados: ");
-        cantidad = Double.parseDouble(leer.readLine());
+        cantidad = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Se tiene que pagar $ " + cobroPinturas(precio, cantidad) + " por " + cantidad + " metros2");
     }

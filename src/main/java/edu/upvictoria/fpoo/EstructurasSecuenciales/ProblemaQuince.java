@@ -18,10 +18,10 @@ public class ProblemaQuince {
         double precio, horas;
 
         System.out.print("Ingrese el precio por hora de servicio: ");
-        precio = Integer.parseInt(leer.readLine());
+        precio = Math.abs(Integer.parseInt(leer.readLine()));
 
         System.out.print("Ingrese la cantidad de horas dispuestas: ");
-        horas = Integer.parseInt(leer.readLine());
+        horas = Math.abs(Integer.parseInt(leer.readLine()));
 
         System.out.print(cobroEstacionamiento(horas, precio) + " años");
     }

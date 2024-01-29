@@ -18,7 +18,7 @@ public class ProblemaSiete {
         double litros, galon = 3.785;
 
         System.out.print("Ingrese en la cantidad de Litros producidos: ");
-        litros = Double.parseDouble(leer.readLine());
+        litros = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Serán recibidos: " + convertirAGalones(litros) + " galones de leche");
 

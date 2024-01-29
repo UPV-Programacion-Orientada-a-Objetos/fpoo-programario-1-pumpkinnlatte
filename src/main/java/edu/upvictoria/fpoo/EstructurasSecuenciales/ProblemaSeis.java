@@ -16,13 +16,13 @@ public class ProblemaSeis {
 
         BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
 
-        double h, r, f1, f2;
+        double h, r;
 
         System.out.print("Ingrese en unidades el tamaño del Radio: ");
-        r = Double.parseDouble(leer.readLine());
+        r = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese en unidades el tamaño de la Hipotenusa: ");
-        h = Double.parseDouble(leer.readLine());
+        h = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("El area de la figura es de: " + areaRSC(h, r) + "(unidades)^2");
 

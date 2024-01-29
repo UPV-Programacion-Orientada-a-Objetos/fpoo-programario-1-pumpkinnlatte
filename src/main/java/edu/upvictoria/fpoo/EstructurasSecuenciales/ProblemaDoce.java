@@ -17,10 +17,10 @@ public class ProblemaDoce {
         double b, h;
 
         System.out.print("Ingrese en unidades la base: ");
-        b = Double.parseDouble(leer.readLine());
+        b = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("Ingrese en unidades la altura: ");
-        h = Double.parseDouble(leer.readLine());
+        h = Math.abs(Double.parseDouble(leer.readLine()));
 
         System.out.print("La alberca consumió: $ " + areaTriangulo(b,h) + " en agua");
     }

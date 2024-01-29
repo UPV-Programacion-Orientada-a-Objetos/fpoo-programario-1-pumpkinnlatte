@@ -10,91 +10,117 @@ import edu.upvictoria.fpoo.EstructurasSecuenciales.*;
  */
 public class Main
 {
+    public static void limpiarConsola() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
+
     public static void main( String[] args ) throws IOException
     {
 
         BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
         String b;
 
-        System.out.println("------ PROGRAMARIO 1 ------\n" );
+        boolean salir = false;
 
-        int opc = Integer.parseInt(leer.readLine());
+        while (salir == false) {
 
-        try {
+            System.out.println("\n---------------- PROGRAMARIO 1 ----------------\n" );
 
-            switch(opc){
-                case 1:
-                    ProblemaUno obj = new ProblemaUno();
-                    break;
-                case 2:
-                    ProblemaDos obj2 = new ProblemaDos();
-                    break;
-                case 3:
-                    ProblemaTres obj3 = new ProblemaTres();
-                    break;
-                case 4:
-                    ProblemaCuatro obj4 = new ProblemaCuatro();
-                    break;
-                case 5:
-                    ProblemaCinco obj5 = new ProblemaCinco();
-                    break;
-                case 6:
-                    ProblemaSeis obj6 = new ProblemaSeis();
-                    break;
-                case 7:
-                    ProblemaSiete obj7 = new ProblemaSiete();
-                    break;
-                case 8:
-                    ProblemaOcho obj8 = new ProblemaOcho();
-                    break;
-                case 9:
-                    ProblemaNueve obj9 = new ProblemaNueve();
-                    break;
-                case 10:
-                    ProblemaDiez obj10 = new ProblemaDiez();
-                    break;
-                case 11:
-                    ProblemaOnce obj11 = new ProblemaOnce();
-                    break;
-                case 12:
-                    ProblemaDoce obj12 = new ProblemaDoce();
-                    break;
-                case 13:
-                    ProblemaTrece obj13 = new ProblemaTrece();
-                    break;
-                case 14:
-                    ProblemaCatorce obj14 = new ProblemaCatorce();
-                    break;
-                case 15:
-                    ProblemaQuince obj15 = new ProblemaQuince();
-                    break;
-                case 16:
-                    ProblemaDieciseis obj16 = new ProblemaDieciseis();
-                    break;
-                case 17:
+            System.out.println("Ingrese el número de la práctica (1-25) (0) Salir\n" );
+            int opc = Integer.parseInt(leer.readLine());
 
-                    break;
-                case 18:
-                    break;
-                case 19:
-                    break;
-                case 20:
-                    break;
-                case 21:
-                    break;
-                case 22:
-                    break;
-                case 23:
-                    break;
-                case 24:
-                    break;
-                case 25:
-                    break;
-                case 26:
-                    break;
+            try {
 
+                switch(opc){
+                    case 0:
+                        salir = true;
+                        break;
+                    case 1:
+                        ProblemaUno obj = new ProblemaUno();
+                        break;
+                    case 2:
+                        ProblemaDos obj2 = new ProblemaDos();
+                        break;
+                    case 3:
+                        ProblemaTres obj3 = new ProblemaTres();
+                        break;
+                    case 4:
+                        ProblemaCuatro obj4 = new ProblemaCuatro();
+                        break;
+                    case 5:
+                        ProblemaCinco obj5 = new ProblemaCinco();
+                        break;
+                    case 6:
+                        ProblemaSeis obj6 = new ProblemaSeis();
+                        break;
+                    case 7:
+                        ProblemaSiete obj7 = new ProblemaSiete();
+                        break;
+                    case 8:
+                        ProblemaOcho obj8 = new ProblemaOcho();
+                        break;
+                    case 9:
+                        ProblemaNueve obj9 = new ProblemaNueve();
+                        break;
+                    case 10:
+                        ProblemaDiez obj10 = new ProblemaDiez();
+                        break;
+                    case 11:
+                        ProblemaOnce obj11 = new ProblemaOnce();
+                        break;
+                    case 12:
+                        ProblemaDoce obj12 = new ProblemaDoce();
+                        break;
+                    case 13:
+                        ProblemaTrece obj13 = new ProblemaTrece();
+                        break;
+                    case 14:
+                        ProblemaCatorce obj14 = new ProblemaCatorce();
+                        break;
+                    case 15:
+                        ProblemaQuince obj15 = new ProblemaQuince();
+                        break;
+                    case 16:
+                        ProblemaDieciseis obj16 = new ProblemaDieciseis();
+                        break;
+                    case 17:
+                        ProblemaDiecisiete obj17 = new ProblemaDiecisiete();
+                        break;
+                    case 18:
+                        ProblemaDieciocho obj18 = new ProblemaDieciocho();
+                        break;
+                    case 19:
+                        ProblemaDiecinueve obj19 = new ProblemaDiecinueve();
+                        break;
+                    case 20:
+                        ProblemaVeinte obj20 = new ProblemaVeinte();
+                        break;
+                    case 21:
+                        ProblemaVeintiuno obj21 = new ProblemaVeintiuno();
+                        break;
+                    case 22:
+                        ProblemaVeintidos obj22 = new ProblemaVeintidos();
+                        break;
+                    case 23:
+                        ProblemaVeintitres obj23 = new ProblemaVeintitres();
+                        break;
+                    case 24:
+                        ProblemaVeinticuatro obj24 = new ProblemaVeinticuatro();
+                        break;
+                    case 25:
+                        ProblemaVeinticinco obj25 = new ProblemaVeinticinco();
+                        break;
+                    default:
+                        System.out.println("Opción no válida, vuelva a intentar");
+                        break;
+                }
+
+                limpiarConsola();
+
+            } catch (IOException e) {
+                System.out.println("Error en la ejecución");
             }
-        } catch (IOException e) {
 
         }
 
